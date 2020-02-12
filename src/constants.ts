@@ -5,5 +5,5 @@ export const messages = {
     help: "Je peux faire XXX pour vous!",
     family: "Bonjour à toute la famille!",
     starved: "Que voulez-vous manger?",
-    gwen: "Gwen est un hacker!",
+    gwen: "Gwen est un branleur!",
 }
