@@ -26,3 +26,7 @@ export const starvedIntent = (conv: DialogflowConversation) => {
 export const GwenIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.gwen);    
 } 
+
+export const SylvainIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.sylvain);    
+} 

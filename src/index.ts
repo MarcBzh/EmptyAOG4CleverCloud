@@ -10,7 +10,8 @@ import {
   byeIntent,
   familyIntent,
   starvedIntent,
-  GwenIntent
+  GwenIntent,
+  SylvainIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -33,6 +34,8 @@ app.intent('Family', familyIntent)
 app.intent('Starved', starvedIntent)
 
 app.intent('Gwen', GwenIntent)
+
+app.intent('Sylvain', SylvainIntent)
 
 
 express().use(bodyParser.json(), app).listen(8080);
