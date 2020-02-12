@@ -12,7 +12,7 @@ import {
   starvedIntent,
   GwenIntent,
   SylvainIntent,
-  SSMLIntent
+  SongIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -38,6 +38,6 @@ app.intent('Gwen', GwenIntent)
 
 app.intent('Sylvain', SylvainIntent)
 
-app.intent('SSML', SSMLIntent);
+app.intent('Song', SongIntent);
 
 express().use(bodyParser.json(), app).listen(8080);
