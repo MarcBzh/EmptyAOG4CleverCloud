@@ -25,5 +25,9 @@ app.intent('Goodbye', byeIntent)
 
 app.intent('Help', helpIntent)
 
+app.intent('Family', familyIntent)
+
+app.intent('Staved', starvedIntent)
+
 
 express().use(bodyParser.json(), app).listen(8080);
