@@ -7,7 +7,9 @@ import {
 import { 
   helpIntent,
   welcomeIntent,
-  byeIntent
+  byeIntent,
+  familyIntent,
+  starvedIntent
 } from './default/base.intent';
 
 const express = require('express');
