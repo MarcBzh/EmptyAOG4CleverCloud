@@ -14,3 +14,11 @@ export const welcomeIntent = (conv: DialogflowConversation) => {
 export const byeIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.goodbye);    
 }
+
+export const familyIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.family);    
+} 
+
+export const starvedIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.starved);    
+} 
