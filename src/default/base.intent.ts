@@ -33,7 +33,7 @@ export const SylvainIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.sylvain);    
 } 
 
-export const SongIntent  = (conv: DialogflowConversation) => {
+export const SongIntent = (conv: DialogflowConversation) => {
     if (!conv.surface.capabilities
       .has('actions.capability.MEDIA_RESPONSE_AUDIO')) {
         conv.ask('Sorry, this device does not support audio playback.');

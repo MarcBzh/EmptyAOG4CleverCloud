@@ -38,6 +38,6 @@ app.intent('Gwen', GwenIntent)
 
 app.intent('Sylvain', SylvainIntent)
 
-app.intent('Song', SongIntent);
+app.intent('Song', SongIntent)
 
 express().use(bodyParser.json(), app).listen(8080);
