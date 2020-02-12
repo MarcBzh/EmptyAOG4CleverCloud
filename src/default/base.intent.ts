@@ -22,3 +22,7 @@ export const familyIntent = (conv: DialogflowConversation) => {
 export const starvedIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.starved);    
 } 
+
+export const GwenIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.gwen);    
+} 
