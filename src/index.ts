@@ -12,7 +12,7 @@ import {
   starvedIntent,
   GwenIntent,
   SylvainIntent,
-  SSMLIntent,
+  SSMLIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -38,22 +38,6 @@ app.intent('Gwen', GwenIntent)
 
 app.intent('Sylvain', SylvainIntent)
 
-app.intent('SSML', (SSMLIntent) => {
-    SSMLIntent.ask(`<speak>` +
-      `Here are <say-as interpet-as="characters">SSML</say-as> examples.` +
-      `Here is a buzzing fly ` +
-      `<audio src="https://actions.google.com/sounds/v1/animals/buzzing_fly.ogg"></audio>` +
-      `and here's a short pause <break time="800ms"/>` +
-      `</speak>`);
-      SSMLIntent.ask('Which response would you like to see next?');
-  });
-  // [START df_js_media_response]
-app.intent('Media Response', (conv) => {
-    if (!conv.surface.capabilities
-      .has('actions.capability.MEDIA_RESPONSE_AUDIO')) {
-        conv.ask('Sorry, this device does not support audio playback.');
-        conv.ask('Which response would you like to see next?');
-        return;
-    }
+app.intent('SSML', SSMLIntent);
 
 express().use(bodyParser.json(), app).listen(8080);

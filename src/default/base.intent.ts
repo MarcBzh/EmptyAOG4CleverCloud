@@ -31,10 +31,12 @@ export const SylvainIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.sylvain);    
 } 
 
-export const SSMLIntent = (conv: DialogflowConversation) => {
-    conv.ask(messages.sslm);    
-} 
-
-export const MediaResponseIntent = (conv: DialogflowConversation) => {
-    conv.ask(messages.media);    
-} 
+export const SSMLIntent = (conv) => {
+    conv.ask(`<speak>` +
+      `Here are <say-as interpet-as="characters">SSML</say-as> examples.` +
+      `Here is a buzzing fly ` +
+      `<audio src="https://actions.google.com/sounds/v1/animals/buzzing_fly.ogg"></audio>` +
+      `and here's a short pause <break time="800ms"/>` +
+      `</speak>`);
+    conv.ask('Which response would you like to see next?');
+  }   
