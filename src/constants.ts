@@ -6,5 +6,7 @@ export const messages = {
     family: "Bonjour à toute la famille!",
     starved: "Que voulez-vous manger?",
     gwen: "Gwen paye son BK!",
-    sylvain:"Happy birthday to you, Happy birthday to you Sylvain! Tu payes ton BK!"
+    sylvain:"Happy birthday to you, Happy birthday to you Sylvain! Tu payes ton BK!",
+    ssml:"https://actions.google.com/sounds/v1/animals/buzzing_fly.ogg",
+    media:"https://actions.google.com/sounds/v1/animals/buzzing_fly.ogg"
 }

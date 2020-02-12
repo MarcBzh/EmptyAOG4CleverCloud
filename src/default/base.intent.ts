@@ -30,3 +30,11 @@ export const GwenIntent = (conv: DialogflowConversation) => {
 export const SylvainIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.sylvain);    
 } 
+
+export const SSMLIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.sslm);    
+} 
+
+export const MediaResponseIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.media);    
+} 
